@@ -1,2 +1,2 @@
-#BAZAR
+BAZAR
 neviem
