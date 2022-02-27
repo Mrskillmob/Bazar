@@ -1,5 +1,6 @@
 import React from 'react';
 import BazarVyh from './components/BazarVyh';
+import './components/myStyles.css';
 
 function App() {
   return (
@@ -7,7 +8,11 @@ function App() {
     <BazarVyh  />
     <div>Vyhladavanie</div>
     <input type="text" className='idk'/>
-    <button className='idk'>Hladaj!</button>
+    <button>Hladaj!</button>
+    <input type="text" className='idk'/>
+    <button> Potvrd cenu!</button>
+    <input type="text" className='idk'/>
+    <button> Potvrd kategoriu!</button>
     </>
   );
 }

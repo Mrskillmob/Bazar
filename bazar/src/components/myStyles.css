@@ -4,6 +4,13 @@
     width: 1080px;
 }
 .idk{
-    color: black;
-    text-align: right;
+    color: grey;
+    text-align: center;
+    margin: 12px;
+}
+.widthl {
+    width: 64px;
+}
+.gap {
+    margin: 12px;
 }
