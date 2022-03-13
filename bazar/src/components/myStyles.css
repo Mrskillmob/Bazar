@@ -8,7 +8,7 @@
     margin: 12px;
     padding: 12px;
     text-align: center;
-    background-color: #0a1531;
+    background: linear-gradient(135deg, blue, purple);
     border-radius: 10px;
     
 }
@@ -31,7 +31,7 @@ margin: 35px;
 display: flex;
 justify-content: center;
 align-items: center;
-background: linear-gradient(135deg, blue, purple);
+background: linear-gradient(135deg, purple, blueviolet);
 }
 .boxokolo2  {
     position: relative;
@@ -43,3 +43,21 @@ background: linear-gradient(135deg, blue, purple);
     align-items: center;
     background: linear-gradient(135deg, blue, purple);
     }
+    .boxokolo3  {
+        position: relative;
+        width: 150px;
+        height: 100px;
+        margin: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, green, blue);
+        }
+        .text {
+            color: #0a1531;
+            margin-left: 15px;  
+        }
+        .obrazok
+        {
+            margin: 75px;
+        }
