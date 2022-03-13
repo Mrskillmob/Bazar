@@ -13,6 +13,7 @@ function App() {
     <button> Potvrd cenu!</button>
     <input type="text" className='idk'/>
     <button> Potvrd kategoriu!</button>
+    <button className='boxokolo2'> Test Button!</button>
     </>
   );
 }
