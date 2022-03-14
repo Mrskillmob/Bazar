@@ -7,15 +7,16 @@
     border-color: blue;
     margin: 12px;
     padding: 12px;
-    text-align: center;
+    text-align: left;
     background: linear-gradient(135deg, blue, purple);
     border-radius: 10px;
     
 }
-.idk{
+.vyhladavanie{
     color: grey;
     text-align: center;
     margin: 12px;
+    
 }
 .widthl {
     width: 64px;
@@ -60,4 +61,18 @@ background: linear-gradient(135deg, purple, blueviolet);
         .obrazok
         {
             margin: 75px;
+            border-style: solid;
+        border-width: 4px;
+        border-color: blue;
+        
+        }
+        .tlacitko {
+            background: linear-gradient(135deg, blue, purple);
+        }
+        .tlacitko2{
+            background: linear-gradient(135deg, blue, purple);
+            
+        }
+        .footer{
+            margin: 2px;
         }
