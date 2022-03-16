@@ -1,7 +1,7 @@
 import React from 'react'
 import BazarVyh from './components/BazarVyh'
 import './components/myStyles.css'
-import footer from './components/Footer'
+
 
 function App() {
   return (
