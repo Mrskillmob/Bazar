@@ -14,7 +14,7 @@
 }
 .vyhladavanie{
     color: grey;
-    text-align: center;
+    text-align: left;
     margin: 12px;
     
 }
@@ -54,9 +54,10 @@ background: linear-gradient(135deg, purple, blueviolet);
         align-items: center;
         background: linear-gradient(135deg, green, blue);
         }
-        .text {
+        .textik {
             color: #0a1531;
-            margin-left: 15px;  
+            margin-left: 15px;
+            text-size-adjust: 25px;  
         }
         .obrazok
         {
@@ -68,11 +69,18 @@ background: linear-gradient(135deg, purple, blueviolet);
         }
         .tlacitko {
             background: linear-gradient(135deg, blue, purple);
+            color: ghostwhite;
         }
         .tlacitko2{
             background: linear-gradient(135deg, blue, purple);
             
         }
         .footer{
-            margin: 2px;
+            
+            border-style: solid;
+            border-color: blue;
+            background: linear-gradient(135deg, blue, purple);
+            text-align: center;
+            color: whitesmoke;
+            border-radius: 10px;
         }
