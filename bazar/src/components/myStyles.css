@@ -18,9 +18,7 @@
     margin: 12px;
     
 }
-.widthl {
-    width: 64px;
-}
+
 .gap {
     margin: 12px;
 }
@@ -70,11 +68,34 @@ background: linear-gradient(135deg, purple, blueviolet);
         .tlacitko {
             background: linear-gradient(135deg, blue, purple);
             color: ghostwhite;
+            cursor: pointer;
         }
         .tlacitko2{
             background: linear-gradient(135deg, blue, purple);
+            cursor: pointer;
             
         }
+        .tlacitko3{
+            background: linear-gradient(135deg, blue, purple);
+            margin: 2px;
+            cursor: pointer;
+            color: whitesmoke;
+        }
+        .tlacitko4{
+            text-align: center;
+            vertical-align: middle;
+            padding: 10.72px 10.72px;
+            cursor: pointer;
+            background: linear-gradient(135deg, blue, purple);
+            margin: 15px;
+            align-items: center;
+        }
+        .tlacitko5{
+            margin-left: 750px;
+            text-align: center;
+            color: whitesmoke;
+        }
+        
         .footer{
             
             border-style: solid;
@@ -83,4 +104,19 @@ background: linear-gradient(135deg, purple, blueviolet);
             text-align: center;
             color: whitesmoke;
             border-radius: 10px;
+        }
+        .obrazokcart{
+            margin: 15px;
+            border-style: solid;
+        border-width: 4px;
+        border-color: blue;
+        }
+        .okrajcart{
+            border-style: solid;
+            border-width: 4px;
+            border-color: blue;
+        }
+
+        .linkcolor{
+            color: whitesmoke;
         }
