@@ -20,7 +20,7 @@ function Home() {
     <button className='tlacitko'> Potvrď cenu!</button>
     <input type="text" className='vyhladavanie'/>
     <button className='tlacitko'> Potvrď kategóriu!</button>
-    <button className='tlacitko4 tlacitko5'> <Link to="/cart" className='linkcolor'>Nakupny Kosik</Link></button>
+    <Link to="/cart" className='linkcolor'> <button className='tlacitko4 tlacitko5'>Nakupny Kosik</button></Link>
      
     <h1 className='textik'>Naše tipy</h1>
     <img src={require('./images/mys.jpg')} height={300} width={300} className="obrazok" alt='obrazok' />
