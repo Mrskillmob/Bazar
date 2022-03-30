@@ -23,16 +23,13 @@ function Home() {
     <Link to="/cart" className='linkcolor'> <button className='tlacitko4 tlacitko5'>Nakupny Kosik</button></Link>
      
     <h1 className='textik'>Naše tipy</h1>
-    <img src={require('./images/mys.jpg')} height={300} width={300} className="obrazok" alt='obrazok' />
-    <img src={require('./images/sluchadla.jpg')} height={300} width={300} className="obrazok" alt='obrazok'/>
-    <img src={require('./images/mys.jpg')} height={300} width={300} className="obrazok" alt='obrazok'/>
-    <img src={require('./images/sluchadla.jpg')} height={300} width={300} className="obrazok" alt='obrazok'/>
-    <img src={require('./images/mys.jpg')} height={300} width={300} className="obrazok" alt='obrazok'/>
-    <img src={require('./images/sluchadla.jpg')} height={300} width={300} className="obrazok" alt='obrazok'/>
-    <img src={require('./images/mys.jpg')} height={300} width={300}className="obrazok" alt='obrazok'/>
-    <img src={require('./images/sluchadla.jpg')} height={300} width={300} className="obrazok" alt='obrazok'/>
-    <img src={require('./images/mys.jpg')} height={300} width={300}className="obrazok" alt='obrazok'/>
-    <img src={require('./images/sluchadla.jpg')} height={300} width={300} className="obrazok" alt='obrazok'/>
+    <Link to="/item"> <img src={require('./images/mys.jpg')} height={300} width={300} className="obrazok" alt='obrazok' /> </Link>
+    <Link to="/item"> <img src={require('./images/mys.jpg')} height={300} width={300} className="obrazok" alt='obrazok' /> </Link>
+    <Link to="/item"> <img src={require('./images/mys.jpg')} height={300} width={300} className="obrazok" alt='obrazok' /> </Link>
+    <Link to="/item"> <img src={require('./images/mys.jpg')} height={300} width={300} className="obrazok" alt='obrazok' /> </Link>
+    <Link to="/item"> <img src={require('./images/mys.jpg')} height={300} width={300} className="obrazok" alt='obrazok' /> </Link>
+    <Link to="/item"> <img src={require('./images/mys.jpg')} height={300} width={300} className="obrazok" alt='obrazok' /> </Link>
+    
           
           <Footer/>
   </body>  

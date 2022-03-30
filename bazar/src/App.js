@@ -8,6 +8,7 @@ import About from './Pages/About'
 import Cart from './Pages/Cart'
 import ErrorPage from './Pages/ErrorPage'
 import UserData from './Pages/UserData'
+import Item from './Pages/Item'
 
 function App() {
   return ( 
@@ -20,6 +21,7 @@ function App() {
         <Route  path="/cart" element={<Cart />} />
         <Route path="*" element={<ErrorPage />} />
         <Route path="/userdata" element={<UserData />} />
+        <Route path="/item" element={<Item />} />
       </Routes>
     </Router>
     
