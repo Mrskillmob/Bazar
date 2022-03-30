@@ -31,13 +31,8 @@ function Cart() {
     </p>
 
     </div>
-
     
-    
-    
-    
-    
-    <button className='tlacitko4'> <Link to="/userdata">Pokracovat v platbe!</Link> </button>
+     <Link to="/userdata"><button className='tlacitko4 tlacitko'> Pokracovat v platbe!</button></Link> 
     
     <p>
     <Footer></Footer>
