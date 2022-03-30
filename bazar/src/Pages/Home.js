@@ -10,7 +10,7 @@ function Home() {
       <body>
     
     <BazarVyh  />
-    <Link to="/about" className='textik'>ABOUT</Link>
+    
 
     <h2 className='textik'>Vyhľadávanie</h2>
     
@@ -28,9 +28,9 @@ function Home() {
     <Link to="/item"> <img src={require('./images/mys.jpg')} height={300} width={300} className="obrazok" alt='obrazok' /> </Link>
     <Link to="/item"> <img src={require('./images/mys.jpg')} height={300} width={300} className="obrazok" alt='obrazok' /> </Link>
     <Link to="/item"> <img src={require('./images/mys.jpg')} height={300} width={300} className="obrazok" alt='obrazok' /> </Link>
-    <Link to="/item"> <img src={require('./images/mys.jpg')} height={300} width={300} className="obrazok" alt='obrazok' /> </Link>
+      <img src={require('./images/mys.jpg')} height={300} width={300} className="obrazok" alt='obrazok' /> 
     
-          
+      <Link to="/about" className='textik'>ABOUT</Link>
           <Footer/>
   </body>  
 </>
