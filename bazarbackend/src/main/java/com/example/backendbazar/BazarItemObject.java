@@ -11,13 +11,11 @@ public class BazarItemObject {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
-    private String title;
-
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -53,8 +51,36 @@ public class BazarItemObject {
         this.phonenumber = phonenumber;
     }
 
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getAutorname() {
+        return autorname;
+    }
+
+    public void setAutorname(String autorname) {
+        this.autorname = autorname;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    private String title;
     private int price;
     private String description;
     private String phonenumber;
+    private String location;
+    private String autorname;
+    private String url;
 }
 
