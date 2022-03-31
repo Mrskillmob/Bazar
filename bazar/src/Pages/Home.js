@@ -7,7 +7,7 @@ function Home() {
     <>
     
 
-      <body>
+      
     
     <BazarVyh  />
     
@@ -32,7 +32,7 @@ function Home() {
     
       <Link to="/about" className='textik'>ABOUT</Link>
           <Footer/>
-  </body>  
+   
 </>
   )
 }

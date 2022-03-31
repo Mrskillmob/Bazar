@@ -4,7 +4,7 @@ import './myStyles.css'
 export default function BazarVyh() {
   return (
     <div >
-        <h1 class="headerko" > BazarX</h1>
+        <h1 className="headerko" > BazarX</h1>
         
     </div>
   )
