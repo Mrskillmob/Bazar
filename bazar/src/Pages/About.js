@@ -13,12 +13,12 @@ function About() {
       <p className="text-white">Čaute toto je náša website. Úlohou bolo spraviť bazar a tak sme sa toho chytili a spravili tuto pecku.</p>
       <br></br>
         <p className="text-white">Programátor číslo 1 - frontend - Martin Kubica </p>
-        <p className="text-white">Discord : @mrskillmob</p>
-        <p className="text-white">Mail: martinkubica@gmail.com</p>
-        <p className="text-white">Kontakt: +421846123010</p>
+        <p className="text-white">Discord : Mrskillmob#4661</p>
+        <p className="text-white">Mail: martinko29.km@gmail.com</p>
+        <p className="text-white">Kontakt: +421948425060</p>
         <br></br>
         <p className="text-white">Programátor číslo 2 - backend - Sebastián Bugáň</p>
-        <p className="text-white">Discord : @sebax</p>
+        <p className="text-white">Discord : Sebax#9479</p>
         <p className="text-white">Mail: bugansebastian@gmail.com</p>
         <p className="text-white">Kontakt: +421908652250</p>
         

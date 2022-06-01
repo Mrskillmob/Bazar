@@ -5,6 +5,7 @@ import ErrorPage from './Pages/ErrorPage'
 import Item from './Pages/Item'
 import About from './Pages/About'
 import Add from './Pages/Add'
+import Success from './Pages/Success'
 
 function App() {
   return ( 
@@ -16,7 +17,7 @@ function App() {
         <Route path="/item/:id" element={<Item />} />
         <Route path="/about" element={<About />}/>
         <Route path="/add" element={<Add/>}/>
-        
+        <Route path="/success" element={<Success/>}/>
       </Routes>
     </Router>
     </div>

@@ -80,7 +80,8 @@ function Add() {
 
 
           <div className="mt-10">
-            <button type="button" onClick={uploadFile} className="text-white text-3xl bg-red-600 p-3 rounder-xl font-bold">POST!</button>
+            
+              <Link to="/Success"><button type="button" onClick={uploadFile} className="text-white text-3xl bg-red-600 p-3 rounder-xl font-bold">POST!</button>  </Link>
           </div>
 
           </div>
