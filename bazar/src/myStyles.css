@@ -5,3 +5,14 @@
 .text-white{
     color:white;
 }
+
+.bg-red-600{
+background-color: rgb(220 38 38);
+border-radius: 0.5rem;
+color: black;
+}
+
+.bg-black{
+    background-color: black;
+    border-radius: 1rem;
+}

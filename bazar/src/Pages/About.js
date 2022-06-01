@@ -8,28 +8,19 @@ function About() {
       <Navbar />
       <div className="w-full bg-dark-primary h-full flex flex-row items-center justify-center ">
 
-      <div>
+      <div className="mx-10">
       <h1 className="text-xl text-white font-bold">ABOUT US</h1>
-      <p className="text-white">Lorem ipsum dolor sit amet, consectetur 
-      adipiscing elit. Proin porttitor lacus neque, ac volutpat nunc pretium et.
-       Vivamus bibendum imperdiet mauris, ac accumsan eros porttitor id. In consequat,
-        dolor a porta viverra, urna sem sagittis libero, pellentesque ultrices nisl felis.</p>
-        <p className="text-white">Lorem ipsum dolor sit amet, consectetur 
-      adipiscing elit. Proin porttitor lacus neque, ac volutpat nunc pretium et.
-       Vivamus bibendum imperdiet mauris, ac accumsan eros porttitor id. In consequat,
-        dolor a porta viverra, urna sem sagittis libero, pellentesque ultrices nisl felis.</p>
-        <p className="text-white">Lorem ipsum dolor sit amet, consectetur 
-      adipiscing elit. Proin porttitor lacus neque, ac volutpat nunc pretium et.
-       Vivamus bibendum imperdiet mauris, ac accumsan eros porttitor id. In consequat,
-        dolor a porta viverra, urna sem sagittis libero, pellentesque ultrices nisl felis.</p>
-        <p className="text-white">Lorem ipsum dolor sit amet, consectetur 
-      adipiscing elit. Proin porttitor lacus neque, ac volutpat nunc pretium et.
-       Vivamus bibendum imperdiet mauris, ac accumsan eros porttitor id. In consequat,
-        dolor a porta viverra, urna sem sagittis libero, pellentesque ultrices nisl felis.</p>
-        <p className="text-white">Lorem ipsum dolor sit amet, consectetur 
-      adipiscing elit. Proin porttitor lacus neque, ac volutpat nunc pretium et.
-       Vivamus bibendum imperdiet mauris, ac accumsan eros porttitor id. In consequat,
-        dolor a porta viverra, urna sem sagittis libero, pellentesque ultrices nisl felis.</p>
+      <p className="text-white">Čaute toto je náša website. Úlohou bolo spraviť bazar a tak sme sa toho chytili a spravili tuto pecku.</p>
+      <br></br>
+        <p className="text-white">Programátor číslo 1 - frontend - Martin Kubica </p>
+        <p className="text-white">Discord : @mrskillmob</p>
+        <p className="text-white">Mail: martinkubica@gmail.com</p>
+        <p className="text-white">Kontakt: +421846123010</p>
+        <br></br>
+        <p className="text-white">Programátor číslo 2 - backend - Sebastián Bugáň</p>
+        <p className="text-white">Discord : @sebax</p>
+        <p className="text-white">Mail: bugansebastian@gmail.com</p>
+        <p className="text-white">Kontakt: +421908652250</p>
         
       </div>
       

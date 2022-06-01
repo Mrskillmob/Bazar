@@ -7,18 +7,40 @@ import { useEffect , useState } from 'react'
 import axios from "axios"
 function Home() {
   
-  const [url, setUrl] = useState("")
-   const getUrl =  (id)=>{
+  const [url, setUrl] = useState([])
+
+  useEffect(() => {
+    const getData = ()=>{
      
     axios.get("http://localhost:8080/api/getallitems").then((response) => {
-     setUrl( response.data[id].url)
-     
+     setUrl(response.data)
+    console.log(response.data) 
     })
-    console.log(url)
-    return url
     
+    
+
+
+
+
   }
-    
+    getData();
+  }, []);
+
+
+   const render = ()=> {
+     var renderItems = []
+     renderItems = url.map((item) => {
+       console.log(item)
+      return(
+        <Link to={"/item/" + item.id} className="h-full w-full flex flex-col items-center">
+            <img className="w-[220px] h-[220px] bg-black object-contain" src={item.url}/>
+            <h1 className="text-white text-2xl mt-2 font-bold">{item.price + " €"}</h1>
+        </Link>
+      )
+     })
+     console.log(renderItems)
+     return renderItems
+   } 
   
  
     
@@ -28,54 +50,7 @@ function Home() {
       <Navbar />
       <div className="w-full bg-dark-primary h-full flex flex-row items-center justify-center">
         <div className="grid grid-rows-4 grid-cols-4 p-16 gap-10 w-[1200px] h-full">
-          <Link to="/item" className="h-full w-full">
-            <img src={mys}/>
-          </Link>
-          <Link to="/item" className="h-full w-full">
-            <img src={getUrl(0)}/>
-          </Link>
-          <Link to="/item" className="h-full w-full">
-            <img src={mys}/>
-          </Link>
-          <Link to="/item" className="h-full w-full">
-            <img src={mys}/>
-          </Link>
-          <Link to="/item" className="h-full w-full">
-            <img src={mys}/>
-          </Link>
-          <Link to="/item" className="h-full w-full">
-            <img src={mys}/>
-          </Link>
-          <Link to="/item" className="h-full w-full">
-            <img src={mys}/>
-          </Link>
-          <Link to="/item" className="h-full w-full">
-            <img src={mys}/>
-          </Link>
-          <Link to="/item" className="h-full w-full">
-            <img src={mys}/>
-          </Link>
-          <Link to="/item" className="h-full w-full">
-            <img src={mys}/>
-          </Link>
-          <Link to="/item" className="h-full w-full">
-            <img src={mys}/>
-          </Link>
-          <Link to="/item" className="h-full w-full">
-            <img src={mys}/>
-          </Link>
-          <Link to="/item" className="h-full w-full">
-            <img src={mys}/>
-          </Link>
-          <Link to="/item" className="h-full w-full">
-            <img src={mys}/>
-          </Link>
-          <Link to="/item" className="h-full w-full">
-            <img src={mys}/>
-          </Link>
-          <Link to="/item" className="h-full w-full">
-            <img src={mys}/>
-          </Link> 
+          {render()}         
         </div>
       </div>
       <Footer />

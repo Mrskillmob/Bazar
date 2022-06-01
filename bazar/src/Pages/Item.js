@@ -1,23 +1,33 @@
 
-import { Link } from 'react-router-dom'
-import { React, useState, useEffect } from "react"
+import { Link, useParams } from 'react-router-dom'
+import { React, useState, useEffect} from "react"
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import mys from '../images/mys.jpg'
 import axios from 'axios'
 
 function Item() {
-  const [data, setData] = useState({})
-   const getUrl =  ()=>{
-     
+  const [data, setData] = useState([])
+  const [index, setIndex] = useState(0)
+  var { id } = useParams();
+
+  useEffect(() => {
+    const getData = ()=>{
+    console.log(id)
     axios.get("http://localhost:8080/api/getallitems").then((response) => {
-     setData( response.data[0])
-     
+     var tempIndex = response.data.findIndex(p => p.id == id);
+     setData(response.data[tempIndex])
+    console.log(response.data[tempIndex]) 
     })
     
-    return data
     
+
+
+
+
   }
+    getData();
+  }, []);
 
 
   return (
@@ -25,10 +35,15 @@ function Item() {
       <Navbar />
       <div className="w-full bg-dark-primary h-full flex flex-row items-center justify-center">
         <div className="w-full h-full grid grid-cols-2 grid-rows-1 ">
-          <img src={getUrl().url} className="ml-auto my-auto"/>
+          <img src={data.url} className="ml-auto my-auto w-[500px] h-[500px] object-contain"/>
           <div className="m-auto p-10 pr-32">
-            <h1 className="text-white font-bold text-4xl mb-4">{getUrl().title}</h1>
-            <p className="text-white"> {getUrl().description}</p>
+            <h1 className="text-white font-bold text-4xl mb-4">{data.title}</h1>
+            
+            <p className="text-white"> {data.description}</p>
+            <h1 className="text-2xl mt-16 font-bold text-white">{data.price + " €"}</h1>
+            <h1 className="text-lg mt-4 font-bold text-white">{data.autorname}</h1>
+            <h1 className="text-lg font-bold text-white">{data.phonenumber}</h1>
+            <h1 className="text-lg font-bold text-white">{data.location}</h1>
           </div>
         </div>
       </div>

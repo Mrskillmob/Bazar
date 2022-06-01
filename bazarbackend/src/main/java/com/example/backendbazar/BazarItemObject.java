@@ -27,11 +27,11 @@ public class BazarItemObject {
         this.title = title;
     }
 
-    public int getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 
@@ -75,9 +75,24 @@ public class BazarItemObject {
         this.url = url;
     }
 
+
+
     private String title;
-    private int price;
+    private String price;
     private String description;
+
+    public BazarItemObject(String title, String price, String description, String phonenumber, String location, String autorname, String url) {
+        this.title = title;
+        this.price = price;
+        this.description = description;
+        this.phonenumber = phonenumber;
+        this.location = location;
+        this.autorname = autorname;
+        this.url = url;
+    }
+
+    public BazarItemObject (){}
+
     private String phonenumber;
     private String location;
     private String autorname;
