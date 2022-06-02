@@ -11,6 +11,11 @@ function Item() {
   const [index, setIndex] = useState(0)
   var { id } = useParams();
 
+
+  const config = {
+    headers: { 'Content-Type': 'multipart/form-data' }
+  };
+
   useEffect(() => {
     const getData = ()=>{
     console.log(id)
@@ -30,6 +35,15 @@ function Item() {
   }, []);
 
 
+  function deleteFile() {
+    const data3 = {id: data.id}
+    axios.post("http://localhost:8080/api/delete", data3).then(res => {
+      if (res.status === 200) {
+        console.log(res.data);
+      }
+    }); 
+  }
+
   return (
     <div className="grid grid-rows-main h-full w-full">
       <Navbar />
@@ -44,6 +58,8 @@ function Item() {
             <h1 className="text-lg mt-4 font-bold text-white">{data.autorname}</h1>
             <h1 className="text-lg font-bold text-white">{data.phonenumber}</h1>
             <h1 className="text-lg font-bold text-white">{data.location}</h1>
+            <button type="button" onClick={deleteFile} className="text-white mt-3 text-xl bg-red-600 p-2 rounder-xl font-bold">DELETE</button>
+
           </div>
         </div>
       </div>

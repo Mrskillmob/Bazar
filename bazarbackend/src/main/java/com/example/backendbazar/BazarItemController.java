@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.*;
 
+import static java.lang.Integer.parseInt;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
 @Controller
@@ -23,6 +24,12 @@ public class BazarItemController {
     @RequestMapping(path = "/uploadItem", method = POST, consumes = { MediaType.MULTIPART_FORM_DATA_VALUE })
     public @ResponseBody String uploadItems(@RequestParam MultiValueMap<String, String> userFormData){
         bazarItemReposity.save(new BazarItemObject(userFormData.getFirst("title"), userFormData.getFirst("price"), userFormData.getFirst("description"), userFormData.getFirst("phonenumber"), userFormData.getFirst("location"), userFormData.getFirst("autorname"), userFormData.getFirst("url")));
+        return "OK";
+    }
+
+    @PostMapping(path = "/delete")
+    public @ResponseBody String deleteItem(@RequestParam int id ){
+        bazarItemReposity.deleteById(id);
         return "OK";
     }
 }

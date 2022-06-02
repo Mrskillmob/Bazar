@@ -32,8 +32,8 @@ function Home() {
      renderItems = url.map((item) => {
        console.log(item)
       return(
-        <Link to={"/item/" + item.id} className="h-full w-full flex flex-col items-center">
-            <img className="w-[220px] h-[220px] bg-black object-contain" src={item.url}/>
+        <Link to={"/item/" + item.id} className="h-full w-full flex flex-col">
+            <img className="w-full aspect-[16/9] bg-black object-contain" src={item.url}/>
             <h1 className="text-white text-2xl mt-2 font-bold">{item.price + " €"}</h1>
         </Link>
       )
@@ -48,8 +48,8 @@ function Home() {
   return (
     <div className="grid grid-rows-main h-full w-full">
       <Navbar />
-      <div className="w-full bg-dark-primary h-full flex flex-row items-center justify-center">
-        <div className="grid grid-rows-4 grid-cols-4 p-16 gap-10 w-[1200px] h-full">
+      <div className="w-full bg-dark-primary h-full flex flex-row">
+        <div className="grid grid-rows-4 p-16 gap-10 w-full h-full grid-cols-1 justify-center md:grid-cols-2 lg:grid-cols-4">
           {render()}         
         </div>
       </div>
