@@ -27,8 +27,8 @@ public class BazarItemController {
         return "OK";
     }
 
-    @PostMapping(path = "/delete")
-    public @ResponseBody String deleteItem(@RequestParam int id ){
+    @GetMapping(path = "/delete")
+    public @ResponseBody String deleteItem(@RequestParam(value = "id") int id ){
         bazarItemReposity.deleteById(id);
         return "OK";
     }

@@ -3,6 +3,10 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 function Success() {
+  setTimeout(() => { 
+    window.location.replace("/");
+  }, 5000)
+
   return (
     <div className="grid grid-rows-main h-full w-full">
       <Navbar />
