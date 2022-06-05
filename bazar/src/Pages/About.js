@@ -4,9 +4,9 @@ import Footer from '../components/Footer'
 
 function About() {
   return (
-    <div className="grid grid-rows-main h-screen w-full">
+    <div className="grid grid-rows-main h-full w-full">
       <Navbar />
-      <div className="w-full bg-dark-primary h-full flex flex-row items-center justify-center ">
+      <div className="w-full bg-dark-primary h-screen flex flex-row items-center justify-center ">
 
       <div className="mx-10">
       <h1 className="text-xl text-white font-bold">ABOUT US</h1>

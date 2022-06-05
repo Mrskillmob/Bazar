@@ -48,9 +48,9 @@ function Add() {
   return (
     <div className="grid grid-rows-main h-full w-full">
       <Navbar />
-      <div className="w-full bg-dark-primary h-full flex flex-row items-center justify-center">
+      <div className="w-full bg-dark-primary h-screen flex flex-row items-center justify-center overflow-x-hidden">
         <div className="w-full h-full grid grid-cols-2 grid-rows-1 ">
-          <img src={plus} className="ml-auto my-auto"/>
+          <img src={plus} className="ml-auto my-auto hidden md:block"/>
           <div className="m-auto p-10 pr-32">
 
             <h1 className="text-white font-bold text-4xl mb-4">Add Item</h1>
