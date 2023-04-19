@@ -53,24 +53,24 @@ function Add() {
           <img src={plus} className="ml-auto my-auto hidden md:block"/>
           <div className="m-auto p-10 pr-32">
 
-            <h1 className="text-white font-bold text-4xl mb-4">Add Item</h1>
+            <h1 className="text-white font-bold text-4xl mb-4">Nahraj položku</h1>
             
-            <p className="text-white"> Image:</p>
+            <p className="text-white"> Obrázok:</p>
             <input className="p-1" type="file" id="fileinput"></input>
 
-            <p className="text-white"> Title:</p>
+            <p className="text-white"> Názov:</p>
             <input className="p-1 bg-lime-200"  onChange={(event)=>{setTitle(event.target.value)}} type="text" ></input>
 
-            <p className="text-white"> Description:</p>
-            <textarea rows="8" className="w-48 p-1 bg-lime-200" onChange={(event)=>{setDescription(event.target.value)}} type="text" ></textarea>
+            <p className="text-white"> Popis:</p>
+            <textarea rows="4" className="w-48 p-1 bg-lime-200" onChange={(event)=>{setDescription(event.target.value)}} type="text" ></textarea>
             
-            <p className="text-white" > Phone Number:</p>
+            <p className="text-white" > Telefónne číslo:</p>
             <input className="p-1 bg-lime-200" onChange={(event)=>{setPhonenumber(event.target.value)}}  type="text" ></input>
 
-            <p className="text-white" > Location:</p>
+            <p className="text-white" > Lokácia:</p>
             <input className="p-1 bg-lime-200" onChange={(event)=>{setLocation(event.target.value)}}  type="text" ></input>
 
-            <p className="text-white" > Price:</p>
+            <p className="text-white" > Cena:</p>
             <input className="p-1 bg-lime-200"  onChange={(event)=>{setPrice(event.target.value)}}  type="text" ></input>
 
             <p className="text-white" > Autor:</p>
@@ -81,7 +81,7 @@ function Add() {
 
           <div className="mt-10">
             
-              <Link to="/Success"><button type="button" onClick={uploadFile} className="text-white text-3xl bg-red-600 p-3 rounder-xl font-bold">POST!</button>  </Link>
+              <Link to="/Success"><button type="button" onClick={uploadFile} className="text-white text-3xl bg-red-600 p-3 rounder-xl font-bold">PREDAJ!</button>  </Link>
           </div>
 
           </div>
