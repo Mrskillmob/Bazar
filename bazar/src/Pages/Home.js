@@ -12,7 +12,7 @@ function Home() {
   useEffect(() => {
     const getData = ()=>{
      
-    axios.get("http://localhost:8080/api/getallitems").then((response) => {
+    axios.get("https://bazar-backend-production.up.railway.app/api/getallitems").then((response) => {
      setUrl(response.data)
     console.log(response.data) 
     })
