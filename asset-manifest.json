@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Bazar/static/css/main.451ad7d2.css",
+    "main.js": "/Bazar/static/js/main.71d404cf.js",
+    "static/js/787.145dd59e.chunk.js": "/Bazar/static/js/787.145dd59e.chunk.js",
+    "static/media/mesto.jpg": "/Bazar/static/media/mesto.d8a45d34dd433c66f3b9.jpg",
+    "static/media/simonko.jpg": "/Bazar/static/media/simonko.1f7ae68f236cc1dca823.jpg",
+    "static/media/martinko.jpg": "/Bazar/static/media/martinko.2807055b6c39dfff4464.jpg",
+    "static/media/mys.jpg": "/Bazar/static/media/mys.3f0aa395468d3d7b9627.jpg",
+    "static/media/plus.jpg": "/Bazar/static/media/plus.914188a2e87cc1873f0b.jpg",
+    "index.html": "/Bazar/index.html",
+    "main.451ad7d2.css.map": "/Bazar/static/css/main.451ad7d2.css.map",
+    "main.71d404cf.js.map": "/Bazar/static/js/main.71d404cf.js.map",
+    "787.145dd59e.chunk.js.map": "/Bazar/static/js/787.145dd59e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.451ad7d2.css",
+    "static/js/main.71d404cf.js"
+  ]
+}
